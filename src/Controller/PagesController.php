@@ -3,6 +3,7 @@
 // J'indique le chemin de ma classe PagesController.
 namespace App\Controller;
 
+// J'indique le chemin jusqu'à la classe AbstractController et ses méthodes.
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 
