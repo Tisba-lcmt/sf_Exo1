@@ -1,0 +1,89 @@
+/*** Règles Générales ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.resp {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+w-100 {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+li, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.logo {
+    width: 10%;
+}
+
+/*** Header ***/
+
+header nav {
+    height: 100px;
+    background-color: #D4DBE3;
+}
+
+header a {
+    font-size: 2em;
+    color: black;
+}
+
+/*** Main ***/
+
+section:nth-of-type(1) {
+    height: 500px;
+}
+
+section h1 > a {
+    color: black;
+    font-size: 1.6em;
+}
+
+.imgSect2 {
+    height: 500px;
+    background-image:   url("../../assets/img/fond.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*** Footer ***/
+
+footer#backgroundFooter {
+    height: 100px;
+    background-color: #D4DBE3;
+}
+
+footer .logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
