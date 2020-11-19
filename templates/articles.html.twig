@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    ArticlesList
+{% endblock title %}
+
+
+{% block main %}
+
+    <main>
+
+        <section class="row justify-around align-center">
+            {% for article in articles %}
+                <div class="imgArticles"><img src="{{ article.image }}" alt="Image" class="resp"></div>
+                <h1>{{ article.title }}</h1>
+            {% endfor %}
+        </section>
+
+    </main>
+{% endblock main %}
