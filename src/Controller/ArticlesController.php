@@ -20,7 +20,7 @@ class ArticlesController extends AbstractController
         $ArticlesHelper = new ArticlesHelper();
 
         return $this->render('articles.html.twig', [
-            'articles' => $ArticlesHelper->articles
+            'articles' => $ArticlesHelper->allArticles()
         ]);
 
     }
@@ -35,8 +35,10 @@ class ArticlesController extends AbstractController
 
         // Le deuxième paramètre de la méthode render() est la variable qui contient avec
         // leurs wildcards id associées récupérées dans le tableau des articles de la classe ArticlesHelper
+
+        // J'appelle la méthode alltArticles() de ma classe ArticlesHelper.
         return $this->render('article.html.twig', [
-            'article'=>$ArticlesHelper->articles[$id]
+            'article'=>$ArticlesHelper->allArticles()[$id]
         ]);
     }
 }

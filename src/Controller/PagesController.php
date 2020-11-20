@@ -38,10 +38,8 @@ class PagesController extends AbstractController
         // Je créé une variable $ArticlesHelper qui contient une nouvelle instance de la classe ArticlesHelper
         $ArticlesHelper = new ArticlesHelper();
 
-        // Je stocke dans une variable le résultat du découpage du tableau qui contient les 3 derniers
-        // articles.
-
-        $articles_slice = array_slice($ArticlesHelper->articles, -3);
+        // J'appelle la méthode lastArticles() de ma classe ArticlesHelper.
+        $articles = $ArticlesHelper->lastArticles();
 
         // J'utilise la méthode render propre à la classe AbstractController
         // qui va chercher mon fichier .html.twig (dans le dossier templates)
@@ -49,7 +47,7 @@ class PagesController extends AbstractController
 
         // Le deuxième paramètre de la méthode render() est la variable qui contient mes 3 derniers articles
         return $this->render('home.html.twig', [
-            'articles'=>$articles_slice
+            'articles'=>$articles
         ]);
     }
 }

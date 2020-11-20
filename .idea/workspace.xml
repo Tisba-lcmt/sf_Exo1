@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9862b528-f282-408d-a99d-272390f3c4a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Services/ArticlesHelper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticlesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ArticlesHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ArticlesHelper.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +166,7 @@
       <updated>1605794882210</updated>
       <workItem from="1605794883267" duration="21253000" />
       <workItem from="1605857861810" duration="7778000" />
-      <workItem from="1605865896581" duration="19146000" />
+      <workItem from="1605865896581" duration="21919000" />
     </task>
     <servers />
   </component>

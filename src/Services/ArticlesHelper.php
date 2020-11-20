@@ -41,4 +41,19 @@ class ArticlesHelper
             "image" => "https://img.lemde.fr/2020/11/19/0/0/5184/3456/688/0/60/0/05ce9ea_162988352-000-1uw2ar.jpg"
         ],
     ];
+
+    // Je créé une méthode pour récupèrer simplement tous les articles.
+    // Je pourrais donc rappeler cette méthode quand j'en ai besoin.
+    public function allArticles()
+    {
+        return $this->articles;
+    }
+
+    // Je créé une méthode pour récupèrer simplement les 3 derniers articles.
+    // Je pourrais donc rappeler cette méthode quand j'en ai besoin.
+    public function lastArticles()
+    {
+        $lastArticles =  array_slice($this->articles, -3);
+        return $lastArticles;
+    }
 }
