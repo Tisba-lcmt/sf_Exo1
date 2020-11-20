@@ -1,26 +1,27 @@
-{# Dans le fichier twig appelé par mon controleur, j'étends le fichier base.html.twig
-    cela me permet de récupérer le header, le footer, et tout le html défini dans le fichier base.html.twig
-#}
+{# Dans le fichier twig appelé par mon controleur, j'étends le fichier base.html.twig cela me permet
+de récupérer le header, le footer, et tout le html défini dans le fichier base.html.twig #}
 {% extends 'base.html.twig' %}
 
 {# Block qui contient le titre du document du site #}
-{% block title %}
-    Home
-{% endblock title %}
+{% block title %}Home{% endblock title %}
 
 {# Block qui contient le contenu du document du site #}
 {% block main %}
 
     <main>
-        {# Section des titres des Articles   #}
+
+        {# Section des titres des Articles #}
         <section class="row justify-around align-center" id="homeTitleArticle">
+
             <h1><a href="">Article 1</a></h1>
             <h1><a href="">Article 2</a></h1>
             <h1><a href="">Article 3</a></h1>
+
         </section>
 
         {# Section de l'image en fond #}
         <section><div class="imgSect2"></div></section>
 
     </main>
+
 {% endblock main %}

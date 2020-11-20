@@ -1,8 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}
-    ArticlesList
-{% endblock title %}
+{% block title %}ArticlesList{% endblock title %}
 
 
 {% block main %}
@@ -10,27 +8,68 @@
     <main>
 
         <section class="row justify-around">
+
+            {# Pour chaque article contenu dans mon tableau d'article, je créée une variable temporaire
+            "variable" pour qu'à chaque tour de boucle je récupère les valeurs de mon tableau articles#}
             {% for article in articles %}
+
+                {# Je fais une condition pour faire apparaître sur la section 1
+                au maximun trois articles #}
                 {% if article.id <= 3 %}
-                <div class="card">
-                    <a href="{{ path('article_show', {'id': article.id} ) }}"><div class="imgArticles"><img src="{{ article.image }}" alt="Image" class="resp"></div></a>
-                    <br>
-                    <a href="{{ path('article_show', {'id': article.id} ) }}"><h1>{{ article.title }}</h1></a>
-                </div>
+
+                    {# Je créé une div pour contenir l'image de l'article et son titre #}
+                    <div class="card">
+
+                        {# Je créé un lien avec la fonction path qui prend en premier paramètre le nom de la route
+                        vers laquelle je veux faire le lien et en second parametre la de ma wildcard id de la
+                        route concernée #}
+                        <a href="{{ path('article_show', {'id': article.id} ) }}">
+
+                            {# Dans cette div, en lien de mon img, j'affiche la valeur de mon image située dans
+                            ma variable article twig #}
+                            <div class="imgArticles"><img src="{{ article.image }}" alt="Image" class="resp"></div>
+
+                        </a>
+
+                        <a href="{{ path('article_show', {'id': article.id} ) }}">
+
+                            {# J'affiche ma variable title située dans ma variable article twig #}
+                            <h1>{{ article.title }}</h1>
+
+                        </a>
+
+                    </div>
+
                 {% endif %}
+
             {% endfor %}
+
         </section>
 
         <section class="row justify-around">
+
             {% for article in articles %}
+
+
+                {# Je fais une condition pour faire apparaître sur la section 2 les 2 articles restants #}
                 {% if article.id >= 4 %}
+
                     <div class="card">
-                        <a href="{{ path('article_show', {'id': article.id} ) }}"><div class="imgArticles"><img src="{{ article.image }}" alt="Image" class="resp"></div></a>
-                        <br>
-                        <a href="{{ path('article_show', {'id': article.id} ) }}"><h1>{{ article.title }}</h1></a>
+
+                        <a href="{{ path('article_show', {'id': article.id} ) }}">
+                            <div class="imgArticles"><img src="{{ article.image }}" alt="Image" class="resp"></div>
+                        </a>
+
+                        <a href="{{ path('article_show', {'id': article.id} ) }}">
+                            <h1>{{ article.title }}</h1>
+                        </a>
+
                     </div>
+
                 {% endif %}
+
             {% endfor %}
+
         </section>
 
     </main>

@@ -21,25 +21,45 @@
         <title>{% block title %}{% endblock title%}</title>
 
     </head>
+
     <body>
+
         {# En-tête du corps du document #}
         <header>
+
             {# Barre de navigation #}
             <nav class="row justify-around align-center w-100">
-                <div class="logo"><a href=""><img src="{{ asset('assets/img/Logo.png') }}" alt="Logo Le Monde" class="resp"></a></div>
+
+                <div class="logo">
+
+                    <a href="">
+                        <img src="{{ asset('assets/img/Logo.png') }}" alt="Logo Le Monde" class="resp">
+                    </a>
+
+                </div>
+                {# Je créé un lien avec la fonction path qui prend en paramètre le nom de la route #}
+
                 <li><a href="{{ path('homepage') }}">Accueil</a></li>
                 <li><a href="{{ path('articles_list') }}">Articles</a></li>
                 <li><a href="">Item 3</a></li>
                 <li><a href="">Item 4</a></li>
+
             </nav>
+
         </header>
 
         {# Block qui a pour variable main, il sert à inclure le contenue de mes pages twig #}
         {% block main %}{% endblock main %}
 
         {# Pied de page du corps du document #}
+
         <footer class="relative" id="backgroundFooter">
-            <div class="logo absolute"><img src="{{ asset('assets/img/logo.png') }}" alt="Logo Le Monde" class="resp"></div>
+
+            <div class="logo absolute">
+                <img src="{{ asset('assets/img/logo.png') }}" alt="Logo Le Monde" class="resp">
+            </div>
+
         </footer>
+
     </body>
 </html>

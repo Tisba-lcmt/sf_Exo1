@@ -99,6 +99,10 @@ header a {
         text-align: center;
     }
 
+    .imgArticles {
+        margin-bottom: 20px;
+    }
+
     /*** Section article ***/
 
     .container {
