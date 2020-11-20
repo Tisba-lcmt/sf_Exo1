@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Article
+{% endblock title %}
+
+
+{% block main %}
+
+    <main>
+
+        <section class="container">
+            <div class="row justify-center">
+                <div id="row1"><img src="{{ article.image }}" alt="" class="resp"></div>
+            </div>
+            <div class="row justify-center">
+                <div id="row2">
+                    {{ article.title }}
+                </div>
+            </div>
+            <div class="row justify-center">
+                <div id="row3">
+                    {{ article.content }}
+                </div>
+            </div>
+        </section>
+
+    </main>
+{% endblock main %}
