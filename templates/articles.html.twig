@@ -9,10 +9,27 @@
 
     <main>
 
-        <section class="row justify-around align-center">
+        <section class="row justify-around">
             {% for article in articles %}
-                <div class="imgArticles"><img src="{{ article.image }}" alt="Image" class="resp"></div>
-                <h1>{{ article.title }}</h1>
+                {% if article.id <= 3 %}
+                <div class="card">
+                    <a href="{{ path('homepage') }}"><div class="imgArticles"><img src="{{ article.image }}" alt="Image" class="resp"></div></a>
+                    <br>
+                    <a href="{{ path('homepage') }}"><h1>{{ article.title }}</h1></a>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </section>
+
+        <section class="row justify-around">
+            {% for article in articles %}
+                {% if article.id >= 4 %}
+                    <div class="card">
+                        <a href="{{ path('homepage') }}"><div class="imgArticles"><img src="{{ article.image }}" alt="Image" class="resp"></div></a>
+                        <br>
+                        <a href="{{ path('homepage') }}"><h1>{{ article.title }}</h1></a>
+                    </div>
+                {% endif %}
             {% endfor %}
         </section>
 
