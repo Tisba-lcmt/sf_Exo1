@@ -5,38 +5,18 @@
 
 {% block main %}
 
-    {# le fichier base.html.twig défini un espace vide entre le header le footer grâce au block nommé "main".
-    Je vais pouvoir utiliser ce block, et le remplacer par mon contenu de page #}
     <main>
 
         <section class="container">
 
             {# Row 1 #}
-            <div class="row justify-center">
-                <div id="imgArticle"><img src="{{ article.image }}" alt="" class="resp"></div>
-            </div>
+            <div class="row justify-center"><div id="imgArticle"><img src="{{ article.image }}" alt="" class="resp"></div></div>
 
             {# Row 2 #}
-            <div class="row justify-center">
-
-                <div id="titleArticle">
-
-                    {# Dans cette div, j'affiche la valeur title située dans
-                    ma variable article twig#}
-                    <h1>{{ article.title }}</h1>
-
-                </div>
-
-            </div>
+            <div class="row justify-center"><div id="titleArticle"><h1>{{ article.title }}</h1></div></div>
 
             {# Row 3 #}
-            <div class="row justify-center">
-
-                <div id="contentArticle">
-                    <p>{{ article.content }}</p>
-                </div>
-
-            </div>
+            <div class="row justify-center"><div id="contentArticle"><p>{{ article.content }}</p></div></div>
 
         </section>
 

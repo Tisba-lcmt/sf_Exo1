@@ -1,24 +1,39 @@
 {# Dans le fichier twig appelé par mon controleur, j'étends le fichier base.html.twig cela me permet
-de récupérer le header, le footer, et tout le html défini dans le fichier base.html.twig #}
+de récupérer le header, le footer, et tout le html défini dans le fichier base.html.twig . #}
 {% extends 'base.html.twig' %}
 
-{# Block qui contient le titre du document du site #}
+{# Block qui contient le titre du document du site. #}
 {% block title %}Home{% endblock title %}
 
-{# Block qui contient le contenu du document du site #}
 {% block main %}
+
+    {# le fichier base.html.twig défini un espace vide entre le header le footer grâce au block nommé "main".
+    Je vais pouvoir utiliser ce block, et le remplacer par mon contenu de page. #}
 
     <main>
 
         {# Section des titres des Articles #}
         <section class="row justify-around align-center" id="homeTitleArticle">
 
+            {# Pour chaque article contenu dans mon tableau d'article, je créée une variable temporaire
+            "variable" pour qu'à chaque tour de boucle je récupère les valeurs de mon tableau articles. #}
             {% for article in articles %}
+
+                {# Je créé une div pour contenir l'image de l'article et son titre #}
                 <div class="bloctitle">
+
+                    {# Je créé un lien avec la fonction path qui prend en premier paramètre le nom de la route
+                        vers laquelle je veux faire le lien et en second parametre la de ma wildcard id de la
+                        route concernée. #}
                     <a href="{{ path('article_show', {'id': article.id} ) }}">
+
+                        {# J'affiche ma variable title située dans ma variable article twig. #}
                         <h1>{{ article.title }}</h1>
+
                     </a>
+
                 </div>
+
             {% endfor %}
 
         </section>

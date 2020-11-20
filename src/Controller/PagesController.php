@@ -66,19 +66,20 @@ class PagesController extends AbstractController
     // Elle est appelée automatiquement car la route est définie au dessus de cette méthode.
     // Elle peut être appelée extérieurement avec son nom précis.
 
-    // La méthode home va retourner une redirection sous forme de réponse du protocole HTTP
+    // La méthode home va retourner une redirection sous forme de réponse du protocole HTTP.
 
     public function home()
     {
 
-        // Je créé une variable qui contient la constance ARTICLES de la classe actuelle (self)
+        // Je créé une variable qui contient la constante ARTICLES de la classe actuelle
+        // grâce au mot clé self et à l'opérateur de résolution de porté (::).
         $articles = self::ARTICLES;
 
         $articles_slice = array_slice($articles, 2, 3);
 
         // J'utilise la méthode render propre à la classe AbstractController
         // qui va chercher mon fichier .html.twig (dans le dossier templates)
-        // puis le compiler en HTML et le renvoyer en tant que réponse HTTP
+        // puis le compiler en HTML et le renvoyer en tant que réponse HTTP.
 
         return $this->render('home.html.twig', [
             'articles'=>$articles_slice

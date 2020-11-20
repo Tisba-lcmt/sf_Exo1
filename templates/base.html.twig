@@ -13,11 +13,11 @@
         <meta name="robots" content="index, follow">
 
         {# Lien vers mon fichier style.css en partant du dossier assets à l'aide de la methode asset()
-        propre à twig et lié à Symfony. Cette méthode permet de viser #}
+        propre à twig et lié à Symfony. Cette méthode permet de viser. #}
 
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-        {# Block qui a pour variable title, il sert à inclure le titre du document de mon site #}
+        {# Block qui a pour variable title, il sert à inclure le titre du document de mon site. #}
         <title>{% block title %}{% endblock title%}</title>
 
     </head>
@@ -33,11 +33,13 @@
                 <div class="logo">
 
                     <a href="">
+                        {# Lien vers mon fichier style.css en partant du dossier assets à l'aide de la methode asset()
+                        propre à twig et lié à Symfony. #}
                         <img src="{{ asset('assets/img/Logo.png') }}" alt="Logo Le Monde" class="resp">
                     </a>
 
                 </div>
-                {# Je créé un lien avec la fonction path qui prend en paramètre le nom de la route #}
+                {# Je créé un lien avec la fonction path qui prend en paramètre le nom de la route. #}
 
                 <li><a href="{{ path('homepage') }}">Accueil</a></li>
                 <li><a href="{{ path('articles_list') }}">Articles</a></li>
@@ -48,10 +50,10 @@
 
         </header>
 
-        {# Block qui a pour variable main, il sert à inclure le contenue de mes pages twig #}
+        {# Block qui a pour variable main, il sert à inclure le contenue de mes pages twig. #}
         {% block main %}{% endblock main %}
 
-        {# Pied de page du corps du document #}
+        {# Pied de page du corps du document. #}
 
         <footer class="relative" id="backgroundFooter">
 
