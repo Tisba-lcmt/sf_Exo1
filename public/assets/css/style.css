@@ -99,7 +99,7 @@ header a {
         text-align: center;
     }
 
-    /*** Section articles ***/
+    /*** Section article ***/
 
     .container {
         width: 70%;
@@ -107,12 +107,17 @@ header a {
         padding: 50px 0;
     }
 
-    #row1 {
+    #imgArticle{
         width: 100%;
     }
 
-    #row1, #row2 {
+    #imgArticle, #titleArticle{
         margin-bottom: 30px;
+        text-align: center;
+    }
+
+    #contentArticle {
+        text-align: justify;
     }
 
 /*** Fin du Main ***/

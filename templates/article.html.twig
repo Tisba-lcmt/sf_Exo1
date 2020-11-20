@@ -10,17 +10,23 @@
     <main>
 
         <section class="container">
+
+            {# Row 1 #}
             <div class="row justify-center">
-                <div id="row1"><img src="{{ article.image }}" alt="" class="resp"></div>
+                <div id="imgArticle"><img src="{{ article.image }}" alt="" class="resp"></div>
             </div>
+
+            {# Row 2 #}
             <div class="row justify-center">
-                <div id="row2">
-                    {{ article.title }}
+                <div id="titleArticle">
+                    <h1>{{ article.title }}</h1>
                 </div>
             </div>
+
+            {# Row 3 #}
             <div class="row justify-center">
-                <div id="row3">
-                    {{ article.content }}
+                <div id="contentArticle">
+                    <p>{{ article.content }}</p>
                 </div>
             </div>
         </section>
