@@ -69,12 +69,14 @@ class PagesController extends AbstractController
             ],
         ];
 
+        $articles_slice = array_slice($articles, 2, 3);
+
         // J'utilise la méthode render propre à la classe AbstractController
         // qui va chercher mon fichier .html.twig (dans le dossier templates)
         // puis le compiler en HTML et le renvoyer en tant que réponse HTTP
 
         return $this->render('home.html.twig', [
-            'articles'=>$articles
+            'articles'=>$articles_slice
         ]);
     }
 }
