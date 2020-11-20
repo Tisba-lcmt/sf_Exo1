@@ -14,11 +14,11 @@ de récupérer le header, le footer, et tout le html défini dans le fichier bas
         <section class="row justify-around align-center" id="homeTitleArticle">
 
             {% for article in articles |slice(2,5) %}
-
-                <a href="{{ path('article_show', {'id': article.id} ) }}">
-                    <h1>{{ article.title }}</h1>
-                </a>
-
+                <div class="bloctitle">
+                    <a href="{{ path('article_show', {'id': article.id} ) }}">
+                        <h1>{{ article.title }}</h1>
+                    </a>
+                </div>
             {% endfor %}
 
         </section>

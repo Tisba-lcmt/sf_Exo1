@@ -72,9 +72,14 @@ header a {
         height: 250px;
     }
 
-    section h1 > a {
+    section .bloctitle {
+        width: 30%;
+    }
+
+    section a > h1  {
         color: black;
-        font-size: 1.6em;
+        font-size: 1.4em;
+        text-align: center;
     }
 
     .imgSect2 {
