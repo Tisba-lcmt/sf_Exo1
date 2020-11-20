@@ -9,7 +9,7 @@ class ArticlesHelper
     // J'ai créé un attribut de la classe PagesController dans une variable
     // $articles pour simuler une requête en BDD et qui récupère tous les articles
     // C'est un array (tableau) à index numérique.
-    const ARTICLES = [
+    public $articles = [
         1 => [
             "id" => 1,
             "title" => "Le gouvernement a trois mois pour prouver qu’il respecte ses engagements climatiques, une première en France",

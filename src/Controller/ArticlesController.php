@@ -19,12 +19,8 @@ class ArticlesController extends AbstractController
     {
         $ArticlesHelper = new ArticlesHelper();
 
-        // Je créé une variable qui contient la constance ARTICLES de la classe
-        // PagesController
-        $articles = ArticlesHelper::ARTICLES;
-
         return $this->render('articles.html.twig', [
-            'articles' => $articles
+            'articles' => $ArticlesHelper->articles
         ]);
 
     }
@@ -35,10 +31,12 @@ class ArticlesController extends AbstractController
 
     public function articleShow($id)
     {
-        $articles = ArticlesHelper::ARTICLES;
+        $ArticlesHelper = new ArticlesHelper();
 
+        // Le deuxième paramètre de la méthode render() est la variable qui contient avec
+        // leurs wildcards id associées récupérées dans le tableau des articles de la classe ArticlesHelper
         return $this->render('article.html.twig', [
-            'article'=>$articles[$id]
+            'article'=>$ArticlesHelper->articles[$id]
         ]);
     }
 }
