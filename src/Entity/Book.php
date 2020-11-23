@@ -57,14 +57,14 @@ class Book
 
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="boolean")
      */
 
     private $availability;
 
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text")
      */
 
     private $summary;
