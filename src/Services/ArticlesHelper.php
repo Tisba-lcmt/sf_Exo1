@@ -6,7 +6,7 @@ namespace App\Services;
 
 class ArticlesHelper
 {
-    // J'ai créé un attribut de la classe PagesController dans une variable
+    // J'ai créé un attribut de la classe ArticlesHelper dans une variable
     // $articles pour simuler une requête en BDD et qui récupère tous les articles
     // C'est un array (tableau) à index numérique.
     public $articles = [
