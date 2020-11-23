@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9862b528-f282-408d-a99d-272390f3c4a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Entity/Book.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ArticlesHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ArticlesHelper.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +172,7 @@
       <workItem from="1605953376741" duration="99000" />
       <workItem from="1605953490399" duration="8623000" />
       <workItem from="1606044622941" duration="3473000" />
-      <workItem from="1606117417291" duration="2366000" />
+      <workItem from="1606117417291" duration="7323000" />
     </task>
     <servers />
   </component>
@@ -184,10 +184,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605953472973" />
-    <state x="543" y="135" key="NewPhpClassDialog" timestamp="1605882638259">
+    <state x="543" y="135" key="NewPhpClassDialog" timestamp="1606136357034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="543" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1605882638259" />
+    <state x="543" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1606136357034" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1605865865409">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
